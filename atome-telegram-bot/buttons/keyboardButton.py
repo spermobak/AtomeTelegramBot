@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 BTN_LOGIN = KeyboardButton('Зарегистрироваться', callbackcallback_data='login')
@@ -7,3 +8,8 @@ BTN_FAQ = KeyboardButton('Часто задаваемые вопросы', callb
 
 START = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(
         BTN_SOCIAL_NETWORK, BTN_FAQ).add(BTN_LOGIN)
+=======
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+
+>>>>>>> origin/master
