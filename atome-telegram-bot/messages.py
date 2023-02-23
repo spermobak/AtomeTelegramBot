@@ -8,3 +8,11 @@ def login() -> str:
 
 def faq() -> str:
     return 'Частые вопросы'
+
+
+def menu() -> str:
+    return 'Меню'
+
+
+def help() -> str:
+    return 'Помощь'
