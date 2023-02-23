@@ -20,13 +20,14 @@ async def show_command(message: types.Message):
 
 async def on_startup(dp: Dispatcher) -> None:
     await bot.set_my_commands([
-        types.BotCommand("start", "it is start command...")
+        types.BotCommand('start', 'it is start command...'),
+        types.BotCommand('help', 'it is help command...')
     ])
 
 
-@dp.message_handler(commands='help')
+@dp.message_handler(commands=['help'])
 async def show_help_message(message: types.Message):
-    await message.answer(text=f'This bot can get the current weather from your IP address.',
+    await message.answer(text='Useful',
                          reply_markup=inlineButton.HELP)
 
 
